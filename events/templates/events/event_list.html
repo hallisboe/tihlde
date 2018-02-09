@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% for event in object_list %}
+	<a href="{% url 'event:detail' event.slug %}">{{ event.name }}</a>
+	{{ event.name }}
+	{{ event.start }}
+	{{ event.end }}
+	{{ event.location }}
+	{{ event.participants }}
+	{{ event.spots }}
+	{{ event.opens }}
+{% endfor %}
+
+{% endblock %}
