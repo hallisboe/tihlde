@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tihlde</title>
 
     <style>
@@ -20,6 +20,11 @@
 
 body {
   overflow-x: hidden;
+}
+
+#menu-toggle {
+  padding: 10px;
+  color: grey;
 }
 
 #wrapper {
@@ -56,7 +61,7 @@ body {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px;
+  padding: 30px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -64,7 +69,10 @@ body {
   margin-right: -250px;
 }
 
-
+.fa {
+  font-size: 120%;
+  padding: 10px;
+}
 /* Sidebar Styles */
 
 .sidebar-nav {
@@ -137,40 +145,38 @@ body {
 	</style>
   </head>
   <body>
-  	<div id="wrapper" class="toggled">
+
+    <div id="wrapper" class="toggled">
 
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="#">
-                        <img src="https://image.spreadshirtmedia.net/image-server/v1/designs/116018243,height=800.png" class="img-fluid" width="50px" />
+                        <!--<img src="https://image.spreadshirtmedia.net/image-server/v1/designs/116018243,height=800.png" class="img-fluid" width="50px" />-->
                     </a>
                 </li>
                 <li>
-                    <a href="#">Dashboard</a>
+                    <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Hjem</a>
                 </li>
                 <li>
-                    <a href="#">Shortcuts</a>
+                    <a href="#"><i class="fa fa-cog" aria-hidden="true"></i>Om THILDE</a>
                 </li>
                 <li>
-                    <a href="#">Overview</a>
+                    <a href="#"><i class="fa fa-server" aria-hidden="true"></i>Tjenester</a>
                 </li>
                 <li>
-                    <a href="#">Events</a>
+                    <a href="#"><i class="fa fa-users" aria-hidden="true"></i>Frivillige</a>
                 </li>
                 <li>
-                    <a href="#">About</a>
+                    <a href="#"><i class="fa fa-heart" aria-hidden="true"></i>Ny student</a>
                 </li>
                 <li>
-                    <a href="#">Services</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
+                    <a href="#"><i class="fa fa-building" aria-hidden="true"></i>For bedrifter</a>
                 </li>
             </ul>
         </div>
-
+        <i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i>
     	{% block content %}{% endblock %}
 
 	</div>
@@ -180,5 +186,11 @@ body {
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+  </script>
   </body>
 </html>

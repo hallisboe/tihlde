@@ -1,6 +1,11 @@
-{{ object.name }}
-{{ object.start }}
-{{ object.end }}
-{{ object.location }}
-{{ object.spots }}
-{{ object.opens }}
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container-fluid">
+	<h1>{{ object.title }}</h1>
+	<p>{{ object.ingress }}<p>
+	<p>{{ object.body }}</p>
+	<p>{{ object.published }}</p>
+	<p>{{ object.edited }}</p>
+</div>
+{% endblock %}
