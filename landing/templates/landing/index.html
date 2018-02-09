@@ -9,9 +9,9 @@
 	{% for event in events %}
 	  <div class="card">
 	    <div class="card-body">
-	      <h5 class="card-title">Card title</h5>
-	      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-	      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+	      <h5 class="card-title">{{ event.name }}</h5>
+	      <p class="card-text">{{ event.description }}</p>
+	      <p class="card-text"><small class="text-muted">{{ event.start }}</small></p>
 	    </div>
   		</div>
 	{% endfor %}
