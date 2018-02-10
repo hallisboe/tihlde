@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
+<div class="container">
 {% for event in object_list %}
 	<a href="{% url 'event:detail' event.slug %}">{{ event.name }}</a>
-	{{ event.name }}
-	{{ event.start }}
-	{{ event.end }}
-	{{ event.location }}
-	{{ event.participants }}
-	{{ event.spots }}
-	{{ event.opens }}
+	<p>{{ event.name }}</p>
+	<p>{{ event.start }}</p>
+	<p>{{ event.end }}</p>
+	<p>{{ event.location }}</p>
+	<p>{{ event.participants }}</p>
+	<p>{{ event.spots }}</p>
+	<p>{{ event.opens }}</p>
 {% endfor %}
-
+</div>
 {% endblock %}
