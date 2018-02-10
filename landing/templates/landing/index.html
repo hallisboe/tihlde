@@ -22,8 +22,8 @@
 				  <div class="carousel-inner">
 				  	{% for event in events %}
 				  	
-				    	<div class="carousel-item {% if forloop.first %} active {% endif %}" style="height: 400px !important;">
-				    		{% if event.image_url %}<img class="d-block" src="{{ event.image_url }}" style="opacity: 1.0;" min-height="400px"/>{% endif %}
+				    	<div class="carousel-item {% if forloop.first %} active {% endif %}" style="overflow: hidden; height: 400px !important;">
+				    		{% if event.image_url %}<img class="d-block" src="{{ event.image_url }}" style="opacity: 1.0;" min-height="100%" min-width="100%"/>{% endif %}
 				    	<a href="{% url 'event:detail' event.slug %}">
 					      <div class="carousel-caption d-none d-md-block background-text">
 						    <h3 class="card-title"><span>{{ event.name }}</span></h3>
@@ -78,6 +78,7 @@
 	<div class="row">
 		<div class="col-md-12">
 			<h3>Nyheter</h3>
+			<hr>
 			<div class="card-columns">
 			 {% for post in posts %}	
 				{% if post.article %}
