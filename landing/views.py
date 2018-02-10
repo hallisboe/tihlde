@@ -7,4 +7,4 @@ from events.models import Event
 from .models import Post
 
 def index(request):
-	return render(request, 'landing/index.html', {'posts': Post.objects.all().order_by('-published'), 'events': Event.objects.all().order_by('-start')[:6]})
+	return render(request, 'landing/index.html', {'posts': Post.objects.all().order_by('-published'), 'events': Event.objects.all().order_by('start')[:6]})
