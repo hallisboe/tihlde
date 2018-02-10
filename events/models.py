@@ -17,6 +17,10 @@ class Event(models.Model):
 	def participants(self):
 		return Participant.objects.filter(event=self).count()
 
+
+	def is_full(self):
+		return Participant.objects.filter(event=self).count() >= self.spots
+
 	participants = property(participants)
 
 	def __str__(self):
