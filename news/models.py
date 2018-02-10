@@ -2,13 +2,13 @@ from django.db import models
 
 # Create your models here.
 
+from landing.models import Post
 
-class Article(models.Model):
+
+class Article(Post):
 	title = models.CharField(max_length=100)
 	ingress = models.CharField(max_length=200)
 	body = models.TextField()
-	published = models.DateTimeField(auto_now_add=True)
-	edited = models.DateTimeField(auto_now=True)
 
 	slug = models.SlugField(max_length=100)
 

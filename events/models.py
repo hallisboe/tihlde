@@ -1,5 +1,7 @@
 from django.db import models
 
+
+from landing.models import Post
 # Create your models here.
 
 

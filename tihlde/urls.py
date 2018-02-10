@@ -22,9 +22,12 @@ from landing.urls import landing_patterns
 from events.urls import events_patterns
 from news.urls import news_patterns
 
+from ads.urls import ads_patterns
+
 urlpatterns = [
 	path('', include(landing_patterns)),
 	path('arrangement/', include(events_patterns)),
 	path('nyheter/', include(news_patterns)),
+    path('karriere/', include(ads_patterns)),
 	path('admin/', admin.site.urls),
 ]

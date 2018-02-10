@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 from news.models import Article
 from events.models import Event
-
+from .models import Post
 
 def index(request):
-	return render(request, 'landing/index.html', {'articles': Article.objects.all(), 'events': Event.objects.all()})
+	return render(request, 'landing/index.html', {'posts': Post.objects.all().order_by('-published'), 'events': Event.objects.all()})

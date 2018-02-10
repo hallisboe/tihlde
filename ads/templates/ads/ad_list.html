@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+{% for ad in object_list %}
+	<p><a href="{% url 'ad:detail' ad.slug %}">{{ ad.title }}</a></p>
+	<p>{{ad.job_type.name}}</p>
+	<p>{{ad.deadline}}</p>
+	<p>{{ad.location}}</p>
+	<p>{{ad.sponsor.name}}</p>
+	
+{% endfor %}
+
+</div>
+
+{% endblock %}
