@@ -74,12 +74,11 @@
 							<div class="card-body">
 								<a href="{% url 'ad:detail' post.ad.slug %}"><h5 class="card-text">{{ post.ad.title }}</h5></a>
 								<p class="card-text">{{ post.ad.description }}</p>
-								<p class="card-text">For: {{ post.ad.sponsor.name }}</p>
-								<p class="card-text">Frist: {{ post.ad.deadline }}</p>
-								<p class="card-text">Type: {{ post.ad.job_type.name }}</p>
-							</div>
-							<div class="card-footer bg-transparent">
-								<b>Stilling</b>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item"><small>For</small> {{ post.ad.sponsor.name }}</li>
+									<li class="list-group-item"><small>Frist</small> {{ post.ad.deadline }}</li>
+									<li class="list-group-item"><small>Stilling</small> {{ post.ad.job_type.name }}</li>
+								</ul>
 							</div>
 						</div> <!-- card -->
 						{% endif %}
