@@ -21,14 +21,16 @@
 				  </ol>
 				  <div class="carousel-inner">
 				  	{% for event in events %}
+				  	<a href="{% url 'event:detail' event.slug %}">
 				    	<div class="carousel-item {% if forloop.first %} active {% endif %}" style="height: 400px !important;">
 				    		{% if event.image_url %}<img class="d-block w-100" src="{{ event.image_url }}" style="opacity: 1.0;" width="100%"/>{% endif %}
 					      <div class="carousel-caption d-none d-md-block background-text">
-						    <a href="{% url 'event:detail' event.slug %}"><h3 class="card-title"><span>{{ event.name }}</span></h3></a>
+						    <h3 class="card-title"><span>{{ event.name }}</span></h3>
 					      	<p class="card-text"><span>{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}</span><span class="text-danger">Fult</span>{% endif %}</p>
 					      	<p class="card-text"><span><small class="text-muted">Fra {{ event.start }} til {{ event.end }}</small><span></p>
 						  </div>
 					    </div>
+					</a>
 				  	{% endfor %}
 				  </div>
 				  <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
