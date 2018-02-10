@@ -3,7 +3,7 @@
 }
 
 .card {
-  border: none;
+  border: solid 1px #fbfcfd;
 }
 
 .border-primary {
