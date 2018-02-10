@@ -2,11 +2,17 @@
 
 
 {% block content %}
+<style>
+.background-text span {
+	background-color: rgba(0, 0, 0, 0.6);
+	margin: 5px;
+}
+</style>
 
 <div id="page-content-wrapper" class="bg-light">
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<div id="carouselIndicators" class="carousel slide" data-ride="carousel">
 				  <ol class="carousel-indicators">
 				  {% for event in events %}
@@ -15,12 +21,12 @@
 				  </ol>
 				  <div class="carousel-inner">
 				  	{% for event in events %}
-				    	<div class="carousel-item {% if forloop.first %} active {% endif %}">
-					      <img class="d-block w-100" src="http://via.placeholder.com/1920x1080" alt="First slide">
-					      <div class="carousel-caption d-none d-md-block">
-						    <a href="{% url 'event:detail' event.slug %}"><h3 class="card-title">{{ event.name }}</h3></a>
-					      	<p class="card-text">{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}<span class="text-danger">Fult</span>{% endif %}</p>
-					      	<p class="card-text"><small class="text-muted">Fra {{ event.start }} til {{ event.end }}</small></p>
+				    	<div class="carousel-item {% if forloop.first %} active {% endif %}" style="height: 400px !important;">
+				    		{% if event.image_url %}<img class="d-block w-100" src="{{ event.image_url }}" style="opacity: 1.0;" width="100%"/>{% endif %}
+					      <div class="carousel-caption d-none d-md-block background-text">
+						    <a href="{% url 'event:detail' event.slug %}"><h3 class="card-title"><span>{{ event.name }}</span></h3></a>
+					      	<p class="card-text"><span>{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}</span><span class="text-danger">Fult</span>{% endif %}</p>
+					      	<p class="card-text"><span><small class="text-muted">Fra {{ event.start }} til {{ event.end }}</small><span></p>
 						  </div>
 					    </div>
 				  	{% endfor %}
@@ -51,9 +57,9 @@
 				</div>
 				<a href="{% url 'event:list' %}">Se flere...</a>
 			</div>-->
-			<div class="col-md-6">
+			<div class="col-lg-6">
 				<div class="card bg-dark text-white">
-				  <img class="card-img" src="http://www.tokkoro.com/picsup/448052-matrix-images-background.jpg" style="filter: grayscale(100%);" alt="Card image">
+				  <img class="card-img" src="http://www.tokkoro.com/picsup/448052-matrix-images-background.jpg" style="height: 400px !important; filter: grayscale(100%);" alt="Card image">
 
 				  <div class="card-img-overlay" style="margin: 5%;">
 				    <h2 class="card-title">Vi i TIHLDE har mange tjenester for deg som er medlem, sjekk dem ut!</h2>
@@ -72,7 +78,7 @@
 			 {% for post in posts %}	
 				{% if post.article %}
 				<div class="card">
-					<img  class="card-img-top" src="http://via.placeholder.com/350x150">
+					{% if post.article.image_url %}<img src="{{ post.article.image_url }}" width="100%" height="100%"/>{% endif %}
 					<div class="card-body">
 						<a href="{% url 'article:detail' post.article.slug %}"><h5 class="card-title">{{ post.article.title }}</h5></a>
 						<p class="card-text">{{ post.article.ingress }}</p>
@@ -80,7 +86,7 @@
 				</div>
 				{% else %}
 				<div class="card border-primary">
-					<img  class="card-img-top" src="http://via.placeholder.com/300x100">
+					{% if post.ad.image_url %}<img src="{{ post.ad.image_url }}" width="100%" height="100%"/>{% endif %}
 					<div class="card-body">
 						<a href="{% url 'ad:detail' post.ad.slug %}"><h5 class="card-text">{{ post.ad.title }}</h5></a>
 						<p class="card-text">{{ post.ad.description }}</p>

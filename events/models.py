@@ -1,5 +1,6 @@
 from django.db import models
 
+from django.utils.safestring import mark_safe
 
 from landing.models import Post
 # Create your models here.
@@ -13,6 +14,8 @@ class Event(models.Model):
 	location = models.CharField(max_length=100)
 	spots = models.IntegerField()
 	opens = models.DateTimeField()
+
+	image_url = models.URLField(blank=True, max_length=1000)
 
 	slug = models.SlugField(max_length=100)
 
