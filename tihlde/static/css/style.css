@@ -2,6 +2,14 @@
   overflow: hidden; height: 400px !important;
 }
 
+.card {
+  border: none;
+}
+
+.border-primary {
+  border: none;
+  border: solid 1px #7e99d3 !important;
+}
 
 .carousel img {
   opacity: 1.0; 
