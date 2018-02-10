@@ -23,7 +23,7 @@
 				  	{% for event in events %}
 				  	
 				    	<div class="carousel-item {% if forloop.first %} active {% endif %}" style="height: 400px !important;">
-				    		{% if event.image_url %}<img class="d-block w-100" src="{{ event.image_url }}" style="opacity: 1.0;" width="100%"/>{% endif %}
+				    		{% if event.image_url %}<img class="d-block w-100" src="{{ event.image_url }}" style="opacity: 1.0;" min-height="400px" width="100%"/>{% endif %}
 				    	<a href="{% url 'event:detail' event.slug %}">
 					      <div class="carousel-caption d-none d-md-block background-text">
 						    <h3 class="card-title"><span>{{ event.name }}</span></h3>
