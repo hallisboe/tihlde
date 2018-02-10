@@ -113,7 +113,7 @@ USE_L10N = False
 USE_TZ = True
 
 DATE_FORMAT = 'd/m/y'
-DATETIME_FORMAT = 'd/m/y H:i'
+DATETIME_FORMAT = 'H:i d/m/y'
 
 # Change 'default' database configuration with $DATABASE_URL.
 DATABASES['default'].update(dj_database_url.config(conn_max_age=500))
