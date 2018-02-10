@@ -24,7 +24,7 @@
 									<p>Arrangement</p>
 									<h3 class="card-title"><span>{{ event.name }}</span></h3>
 									<p class="card-text"><span>{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}</span><span class="text-danger">Fult</span>{% endif %}</p>
-									<p class="card-text"><span>Fra {{ event.start }} til {{ event.end }}<span></p>
+									<p class="card-text"><span>Fra {{ event.start|date:'H:i' }} til {{ event.end }}<span></p>
 								</div>
 							</a>
 						</div>
