@@ -109,8 +109,11 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 TIME_ZONE = 'UTC'
 USE_I18N = True
-USE_L10N = True
+USE_L10N = False
 USE_TZ = True
+
+DATE_FORMAT = 'd/m/y'
+DATETIME_FORMAT = 'd/m/y H:i'
 
 # Change 'default' database configuration with $DATABASE_URL.
 DATABASES['default'].update(dj_database_url.config(conn_max_age=500))

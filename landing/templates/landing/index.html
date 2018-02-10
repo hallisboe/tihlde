@@ -21,9 +21,10 @@
 							{% if event.image_url %}<img class="d-block carousel-image" src="{{ event.image_url }}"/>{% endif %}
 							<a href="{% url 'event:detail' event.slug %}">
 								<div class="carousel-caption d-none d-md-block background-text">
+									<p>Arrangement</p>
 									<h3 class="card-title"><span>{{ event.name }}</span></h3>
 									<p class="card-text"><span>{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}</span><span class="text-danger">Fult</span>{% endif %}</p>
-									<p class="card-text"><span><small class="text-muted">Fra {{ event.start }} til {{ event.end }}</small><span></p>
+									<p class="card-text"><span>Fra {{ event.start }} til {{ event.end }}<span></p>
 								</div>
 							</a>
 						</div>

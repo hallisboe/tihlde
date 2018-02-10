@@ -23,7 +23,7 @@ class Ad(Post):
 	description = models.CharField(max_length=200)
 	job = models.CharField(max_length=200)
 	job_type = models.ForeignKey(Type, on_delete='CASCADE')
-	deadline = models.DateTimeField()
+	deadline = models.DateField()
 	location = models.CharField(max_length=200)
 
 	image_url = models.URLField(blank=True, max_length=1000)
