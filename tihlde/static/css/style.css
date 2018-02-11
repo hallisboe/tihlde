@@ -2,7 +2,7 @@
   overflow: hidden; height: 400px !important;
 }
 
-.card {
+/*.card {
   border: solid 1px #fbfcfd;
 }
 
@@ -10,7 +10,7 @@
   border: none;
   border: solid 1px #baceff !important;
 }
-
+*/
 .carousel img {
   opacity: 1.0; 
   height: 400px;
