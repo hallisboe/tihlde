@@ -1,10 +1,10 @@
 .carousel-item {
-  overflow: hidden; height: 400px !important;
+  overflow: hidden; height: 330px !important;
 }
 
 .carousel {
   background-color: #2A2E32 !important;
-  height: 400px;
+  height: 330px;
 }
 
 
@@ -21,7 +21,7 @@
 }
 
 .banner {
-  height: 400px !important; 
+  height: 330px !important; 
   filter: grayscale(100%);
   opacity: 0.2; 
   background-color: #777;
@@ -36,7 +36,7 @@
 
 .card-img-overlay {
   margin: 5%;
-  margin-top: 20%;
+  margin-top: 10%;
 }
 
 .social {
