@@ -23,7 +23,7 @@
 								<div class="carousel-caption d-none d-md-block background-text">
 									<p>Arrangement</p>
 									<h3 class="card-title"><span>{{ event.name }}</span></h3>
-									<p class="card-text"><span>{{ event.participants  }}/{{ event.spots }} {% if event.is_full %}</span><span class="text-danger">Fult</span>{% endif %}</p>
+									{% if event.is_full %}<p class="card-text"><span></span><span class="text-danger">Fult</span></p>{% endif %}
 									<p class="card-text"><span>Fra {{ event.start|date:'H:i' }} til {{ event.end }}<span></p>
 								</div>
 							</a>
