@@ -47,3 +47,7 @@
   font-size: 150% !important;
   color: white;
 }
+
+.toggle-bar {
+  border-bottom: solid 1px #DFDFDF;
+}
