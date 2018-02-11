@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9d32f3730301199612488b89e5e9f03906757c9b6ea2caae8ce39c8e4b6a9166"
+            "sha256": "bea1532e84477796381fa3ea64c9ef0c93dadd857b66dbbde5f229e176633b66"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -29,12 +29,6 @@
         ]
     },
     "default": {
-        "csscompressor": {
-            "hashes": [
-                "sha256:afa22badbcf3120a4f392e4d22f9fff485c044a1feda4a950ecc5eba9dd31a05"
-            ],
-            "version": "==0.9.5"
-        },
         "dj-database-url": {
             "hashes": [
                 "sha256:e16d94c382ea0564c48038fa7fe8d9c890ef1ab1a8ec4cb48e732c124b9482fd",
