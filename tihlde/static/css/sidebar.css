@@ -8,6 +8,11 @@ body {
   overflow-x: hidden;
 }
 
+
+.carousel-caption {
+   display: block !important;
+} 
+
 #menu-toggle {
   font-size: 20px;
   color: grey;
