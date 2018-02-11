@@ -24,7 +24,7 @@
 									<p>Arrangement</p>
 									<h3 class="card-title"><span>{{ event.name }}</span></h3>
 									{% if event.is_full %}<p class="card-text"><span></span><span class="text-danger">Fult</span></p>{% endif %}
-									<p class="card-text"><span>Fra {{ event.start|date:'H:i' }} til {{ event.end }}<span></p>
+									<p class="card-text"><span><small>{{ event.start|date:'H:i' }}-{{ event.end|date:'H:i' }}</small> {{ event.end|date:'m/y' }}<span></p>
 								</div>
 							</a>
 						</div>
@@ -41,7 +41,7 @@
 					</a>
 				</div> <!-- carousel --> 
 			</div> <!-- col --> 
-			
+
 			<div class="col-lg-6">
 				<div class="card bg-dark text-white">
 					<img class="card-img banner" src="http://www.tokkoro.com/picsup/448052-matrix-images-background.jpg" alt="Card image">
