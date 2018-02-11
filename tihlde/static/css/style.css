@@ -12,20 +12,24 @@
 }
 */
 
+.carousel {
+  background-color: #2A2E32 !important;
+}
+
 
 .carousel img {
   height: 400px;
-  background-color: #777;
+  opacity: 0.5;
   object-fit: cover;
   overflow: hidden;
   position: relative;
   margin: auto;
 }
 
-.background-text span {
+/*.background-text span {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 6px !important;
-}
+}*/
 
 .banner {
   height: 400px !important; 
