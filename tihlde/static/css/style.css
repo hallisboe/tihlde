@@ -2,16 +2,6 @@
   overflow: hidden; height: 400px !important;
 }
 
-/*.card {
-  border: solid 1px #fbfcfd;
-}
-
-.border-primary {
-  border: none;
-  border: solid 1px #baceff !important;
-}
-*/
-
 .carousel {
   background-color: #2A2E32 !important;
   height: 400px;
@@ -29,11 +19,6 @@
   position: relative;
   margin: auto;
 }
-
-/*.background-text span {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 6px !important;
-}*/
 
 .banner {
   height: 400px !important; 
