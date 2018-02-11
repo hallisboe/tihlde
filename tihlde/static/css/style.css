@@ -14,12 +14,16 @@
 
 .carousel {
   background-color: #2A2E32 !important;
+  height: 400px;
 }
 
 
 .carousel img {
-  height: 400px;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  max-height: 110% !important;
   opacity: 0.5;
+  display: block;
   object-fit: cover;
   overflow: hidden;
   position: relative;
