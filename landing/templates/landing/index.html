@@ -54,39 +54,40 @@
 		</div> <!-- row --> 
 
 		<br>
-
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="text-muted">Nyheter</h3>
-				<hr>
-				<div class="card-columns">
-					{% for post in posts %}	
-						{% if post.article %}
-						<div class="card">
-							{% if post.article.image_url %}<img src="{{ post.article.image_url }}" width="100%" height="100%"/>{% endif %}
-							<div class="card-body">
-								<a href="{% url 'article:detail' post.article.slug %}"><h5 class="card-title">{{ post.article.title }}</h5></a>
-								<p class="card-text">{{ post.article.ingress }}</p>
-							</div>
-						</div> <!-- card -->
-						{% else %}
-						<div class="card border-primary">
-							{% if post.ad.image_url %}<img src="{{ post.ad.image_url }}" width="100%" height="100%"/>{% endif %}
-							<div class="card-body">
-								<a href="{% url 'ad:detail' post.ad.slug %}"><h5 class="card-text">{{ post.ad.title }}</h5></a>
-								<p class="card-text">{{ post.ad.description }}</p>
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item"><small>For</small> {{ post.ad.sponsor.name }}</li>
-									<li class="list-group-item"><small>Frist</small> {{ post.ad.deadline }}</li>
-									<li class="list-group-item"><small>Stilling</small> {{ post.ad.job_type.name }}</li>
-								</ul>
-							</div>
-						</div> <!-- card -->
-						{% endif %}
-					{% endfor %}
-				</div> <!-- cards -->
-			</div> <!-- col -->
-		</div> <!-- row -->
+		<section id="feed">
+			<div class="row">
+				<div class="col-md-12">
+					<h3 class="text-muted">Nyheter</h3>
+					<hr>
+					<div class="card-columns">
+						{% for post in posts %}	
+							{% if post.article %}
+							<div class="card">
+								{% if post.article.image_url %}<img src="{{ post.article.image_url }}" width="100%" height="100%"/>{% endif %}
+								<div class="card-body">
+									<a href="{% url 'article:detail' post.article.slug %}"><h5 class="card-title">{{ post.article.title }}</h5></a>
+									<p class="card-text">{{ post.article.ingress }}</p>
+								</div>
+							</div> <!-- card -->
+							{% else %}
+							<div class="card border-primary">
+								{% if post.ad.image_url %}<img src="{{ post.ad.image_url }}" width="100%" height="100%"/>{% endif %}
+								<div class="card-body">
+									<a href="{% url 'ad:detail' post.ad.slug %}"><h5 class="card-text">{{ post.ad.title }}</h5></a>
+									<p class="card-text">{{ post.ad.description }}</p>
+									<ul class="list-group list-group-flush">
+										<li class="list-group-item"><small>For</small> {{ post.ad.sponsor.name }}</li>
+										<li class="list-group-item"><small>Frist</small> {{ post.ad.deadline }}</li>
+										<li class="list-group-item"><small>Stilling</small> {{ post.ad.job_type.name }}</li>
+									</ul>
+								</div>
+							</div> <!-- card -->
+							{% endif %}
+						{% endfor %}
+					</div> <!-- cards -->
+				</div> <!-- col -->
+			</div> <!-- row -->
+		</section> <!-- feed -->
 	</div> <!-- container -->
 </div> <!-- wrapper -->
 
