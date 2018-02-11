@@ -9,7 +9,7 @@ body {
 }
 
 .carousel-caption {
-   display: block !important;
+   display: block !important; /* To stop bootstrap from hiding event info on mobile */
 } 
 
 #menu-toggle {
