@@ -85,11 +85,11 @@
 
 #feed .card {
 
-    -webkit-animation: fadein 0.7s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.7s; /* Firefox < 16 */
-        -ms-animation: fadein 0.7s; /* Internet Explorer */
-         -o-animation: fadein 0.7s; /* Opera < 12.1 */
-            animation: fadein 0.7s;
+    -webkit-animation: fadein 0.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s; /* Internet Explorer */
+         -o-animation: fadein 0.5s; /* Opera < 12.1 */
+            animation: fadein 0.5s;
 }
 
 @keyframes fadein {
