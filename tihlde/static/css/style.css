@@ -23,8 +23,7 @@
 .banner {
   height: 330px !important; 
   filter: grayscale(100%);
-  opacity: 0.2; 
-  background-color: #777;
+  opacity: 0.05; 
 }
 
 .logo {
@@ -41,11 +40,13 @@
 
 .social {
   font-size: 150% !important;
-  color: white;
+  color: #264489;
 }
 
 .toggle-menu {
+  background-color: #264488;
   border-bottom: solid 1px #DFDFDF;
+  margin-bottom: 30px;
 }
 
 
