@@ -19,10 +19,14 @@ pipenv shell
 Da skal alt være satt opp 
 
 Steg 4: Kjør testserver
+For mac og linux:
 ```
 heroku local web
 ```
-
+For windows:
+```
+python manage.py runserver
+```
 Steg 5: Push til rep (krever tilgang)
 ```
 git push origin master 
