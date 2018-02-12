@@ -58,8 +58,10 @@
 }
 
 .toggle-menu {
+  z-index: 1;
   background-color: #264488;
   border-bottom: solid 1px #6e87bf;
+  border-left: solid #264488 1px;
 }
 
 

@@ -41,7 +41,7 @@ body {
 
 #sidebar-wrapper {
   overflow-x: hidden;
-  z-index: 1000;
+  z-index: 0;
   position: fixed;
   left: 300px;
   width: 0;
@@ -80,7 +80,7 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 300px;
   margin: 0;
   padding: 0;
   list-style: none;
