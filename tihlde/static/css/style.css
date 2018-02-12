@@ -66,6 +66,7 @@
   width: 100%;
   transition: top 0.2s ease-in-out;
   top: 0;
+  height: 60px;
 }
 
 #toggle-menu .toggled {
@@ -73,7 +74,7 @@
 }
 
 .nav-up {
-    top: -70px !important;
+    top: -60px !important;
 }
 
 
