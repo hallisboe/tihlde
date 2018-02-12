@@ -4,6 +4,15 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 
+a {
+  font-family: 'Nanum Gothic Coding', monospace !important;
+}
+
+
+h3 {
+  font-family: 'Nanum Gothic Coding', monospace !important;
+}
+
 body {
   overflow-x: hidden;
 }
