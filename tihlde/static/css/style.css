@@ -25,10 +25,19 @@
 }
 
 .banner {
+  background-color: #fff !important;
+}
+
+.banner img {
   border: none;
   height: 330px !important; 
   filter: grayscale(100%);
-  opacity: 0.05; 
+  opacity: 0.35; 
+}
+
+.banner .btn {
+  background-color: #264488;
+  border: none;
 }
 
 .logo {
@@ -40,7 +49,7 @@
 
 .card-img-overlay {
   margin: 5%;
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .social {
