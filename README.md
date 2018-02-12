@@ -14,6 +14,7 @@ Steg 3:
 ```
 pip install pipenv 
 pipenv install 
+pipenv shell
 ```
 Da skal alt være satt opp 
 
