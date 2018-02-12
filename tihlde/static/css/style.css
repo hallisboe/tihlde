@@ -1,13 +1,13 @@
 .carousel-item {
   overflow: hidden; 
   height: 330px !important;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .carousel {
   background-color: #2A2E32 !important;
   height: 330px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 
@@ -21,11 +21,11 @@
   overflow: hidden;
   position: relative;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 .banner {
-  height: 330px !important; 
+  height: 329px !important; 
   filter: grayscale(100%);
   opacity: 0.05; 
 }
