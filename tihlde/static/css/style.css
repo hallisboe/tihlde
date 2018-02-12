@@ -77,6 +77,10 @@
     top: -60px !important;
 }
 
+#content {
+  max-width: 1300px !important;
+  margin: auto;
+}
 
 
 #feed .card {
