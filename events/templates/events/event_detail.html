@@ -14,7 +14,7 @@
 <p>{{ object.description | safe }}</p>
 <p>{{ object.participants }}/{{ object.spots }}</p>
 {% if object.is_full %}
-<h3 class="text-danger">Dette arrangementet er desverre fult</h3>
+<h3 class="text-danger">Dette arrangementet er fult</h3>
 {% else %}
 <form method="POST">
 {% csrf_token %}
