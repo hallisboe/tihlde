@@ -29,6 +29,6 @@ python manage.py runserver
 ```
 Steg 5: Push til rep (krever tilgang)
 ```
-git push origin master 
+git push
 git push heroku master 
 ```
