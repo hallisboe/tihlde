@@ -4,12 +4,11 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
  */
 
-a {
+#sidebar-wrapper a {
   font-family: 'Nanum Gothic Coding', monospace !important;
 }
 
-
-h3 {
+.carousel h3 {
   font-family: 'Nanum Gothic Coding', monospace !important;
 }
 
