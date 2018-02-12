@@ -69,6 +69,7 @@ body {
 #page-content-wrapper {
   width: 100%;
   position: absolute;
+  padding-top: 80px !important;
   padding: 0;
 }
 
