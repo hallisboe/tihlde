@@ -25,7 +25,8 @@
 }
 
 .banner {
-  height: 329px !important; 
+  border: none;
+  height: 330px !important; 
   filter: grayscale(100%);
   opacity: 0.05; 
 }
