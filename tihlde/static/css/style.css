@@ -64,12 +64,18 @@
   border-left: solid #264488 1px;
   position: fixed;
   width: 100%;
+  transition: top 0.2s ease-in-out;
   top: 0;
 }
 
 #toggle-menu .toggled {
     
 }
+
+.nav-up {
+    top: -70px !important;
+}
+
 
 
 #feed .card {
