@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
 {% block content %}
-	<div class="container">
-		<div class="card">
-			<img class="card-img" src="{{ object.image_url }}" alt="Card image">
-			<div class="card-body">
-				<h1>{{ object.title }}</h1>
-				<p>{{ object.ingress }}<p>
-				<p>{{ object.body }}</p>
-			</div>
+<div class="container">
+	<div class="card">
+		<img class="card-img" src="{{ object.image_url }}" alt="Card image">
+		<div class="card-body">
+			<h1>{{ object.title }}</h1>
+			<p>{{ object.ingress }}<p>
+			<p>{{ object.body }}</p>
 		</div>
 	</div>
+</div>
 
 {% endblock %}

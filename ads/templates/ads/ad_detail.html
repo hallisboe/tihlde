@@ -3,12 +3,17 @@
 
 {% block content %}
 <div class="container">
-	<h1><a href="{% url 'ad:detail' ad.slug %}">{{ ad.title }}</a></h1>
-	<p>{{ad.description}}</p>
-	<p>{{ad.job}}</p>
-	<p>{{ad.job_type.name}}</p>
-	<p>{{ad.deadline}}</p>
-	<p>{{ad.location}}</p>
-	<p>{{ad.sponsor.name}}</p>
+	<div class="card">
+		<img class="card-img" src="{{ object.image_url }}" alt="Card image">
+		<div class="card-body">
+			<h1><a href="{% url 'ad:detail' ad.slug %}">{{ ad.title }}</a></h1>
+			<p>{{ad.description}}</p>
+			<p>{{ad.job}}</p>
+			<p>{{ad.job_type.name}}</p>
+			<p>{{ad.deadline}}</p>
+			<p>{{ad.location}}</p>
+			<p>{{ad.sponsor.name}}</p>
+		</div>
+	</div>
 </div>
 {% endblock %}
