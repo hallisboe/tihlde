@@ -1,5 +1,6 @@
 .carousel-item {
-  overflow: hidden; height: 330px !important;
+  overflow: hidden; 
+  height: 330px !important;
 }
 
 .carousel {
