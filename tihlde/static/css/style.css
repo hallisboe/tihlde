@@ -1,11 +1,13 @@
 .carousel-item {
   overflow: hidden; 
   height: 330px !important;
+  border-radius: 5px;
 }
 
 .carousel {
   background-color: #2A2E32 !important;
   height: 330px;
+  border-radius: 5px;
 }
 
 
@@ -19,6 +21,7 @@
   overflow: hidden;
   position: relative;
   margin: auto;
+  border-radius: 5px;
 }
 
 .banner {
