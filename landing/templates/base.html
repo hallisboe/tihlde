@@ -34,6 +34,7 @@
                         <img src="https://image.spreadshirtmedia.net/image-server/v1/designs/116018243,height=800.png" class="logo" />
                     </a>
                 </li>
+                <br>
                 <li>
                     <a href="/"><i class="fa fa-home" aria-hidden="true"></i>Hjem</a>
                 </li>
@@ -63,10 +64,11 @@
             </ul>
         </div>
         <nav class="navbar navbar-light justify-content-between toggle-menu">
-          <a class="navbar-brand"><i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i></a>
+            <a class="navbar-brand"><i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i></a>
         </nav>
-       
-    	{% block content %}{% endblock %}
+        <div id="page-content-wrapper" class="bg-light">
+  	       {% block content %}{% endblock %}
+        </div> <!-- wrapper -->
 
 	</div>
 
