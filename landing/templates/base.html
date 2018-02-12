@@ -3,7 +3,8 @@
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0 shrink-to-fit=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -11,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Nanum+Gothic+Coding" rel="stylesheet">
 
     {% load static %}
-
 
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'css/sidebar.css' %}">
@@ -63,7 +63,7 @@
                 </li>
             </ul>
         </div>
-        <nav class="navbar navbar-light justify-content-between toggle-menu">
+        <nav id="toggle-menu" class="navbar navbar-light justify-content-between">
             <a class="navbar-brand"><i class="fa fa-bars" id="menu-toggle" aria-hidden="true"></i></a>
         </nav>
         <div id="page-content-wrapper" class="bg-light">

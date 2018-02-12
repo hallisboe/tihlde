@@ -13,8 +13,14 @@
 }
 
 body {
-  overflow-x: hidden;
+  max-width: 100% !important;
+  overflow-x: hidden !important; 
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box !important;
 }
+
+
 
 .carousel-caption {
    display: block !important; /* To stop bootstrap from hiding event info on mobile */
